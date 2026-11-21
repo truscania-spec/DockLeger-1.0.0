@@ -1,29 +1,47 @@
-Dock Léger 1.0.0 — par christ13430 (licence MIT)
-==================================================
+Dock Léger 1.2.2 mini — par christ13430
 
-Un dock de lancement façon RocketDock, écrit en Rust natif Windows :
-un seul .exe de 58 Ko, aucun runtime, aucune installation obligatoire.
+Un dock de lancement pour Windows, inspiré de RocketDock, conçu pour être le plus léger possible.
 
-VERSION PORTABLE (ce dossier)
-  • Double-cliquez sur DockLeger.exe. Le dock apparaît en bas de l'écran.
-  • Les réglages sont enregistrés dans dock.ini, à côté de l'exe :
-    placez ce dossier où vous voulez (clé USB, Documents…), pas dans
-    « Program Files » (dossier protégé en écriture).
+📦 Poids : 10,2 Ko en zip · programme de 19 Ko · aucun runtime, aucune dépendance
 
-UTILISATION
-  • Ajouter : glissez des programmes, raccourcis, dossiers ou fichiers sur le dock
-    (ou clic droit › Ajouter un programme…).
-  • Lancer : clic sur une icône.
-  • Réorganiser : maintenez le clic sur une icône et glissez-la.
-  • Clic droit : retirer, ouvrir l'emplacement, position haut/bas, taille des icônes,
-    premier plan, démarrage avec Windows, English, À propos (affiche la mémoire utilisée), Quitter.
+Fonctionnalités
 
-MÉMOIRE
-  Le dock rend sa mémoire inutilisée à Windows dès que la souris le quitte.
-  Il ne consomme du processeur que pendant l'animation de survol.
+Lancez vos programmes, raccourcis, dossiers et fichiers d’un simple clic
+Ajout par glisser-déposer, ou clic droit › Ajouter un programme…
+Réorganisation des icônes : clic maintenu puis glisser
+Position en bas ou en haut de l’écran
+Option « Lancer avec Windows »
+Interface en français, version anglaise au clic droit
+Un seul fichier : il s’installe (menu Démarrer, sans droits administrateur, désinstallable dans Paramètres › Applications) ou fonctionne en portable (réglages dans dock.ini, à côté de l’exe)
 
-ENGLISH
-  Right-click the dock › English to switch the interface to English.
+Ultra-léger
+Écrit en Rust natif, sans bibliothèque standard. La mémoire inutilisée est rendue à Windows après chaque affichage, et le dock n’utilise aucun processeur quand on ne s’en sert pas.
 
-Windows 10 / 11 (64 bits). Windows SmartScreen peut avertir au premier lancement
-car l'exe n'est pas signé : « Informations complémentaires » › « Exécuter quand même ».
+Configuration : Windows 10 / 11, 64 bits.
+L’exe n’étant pas signé, Windows SmartScreen peut afficher un avertissement au premier lancement : cliquez sur « Informations complémentaires », puis « Exécuter quand même ».
+
+Licence MIT, sources incluses.
+
+Dock Léger 1.2.2 mini — by christ13430
+
+A launcher dock for Windows, inspired by RocketDock, built to be as lightweight as possible.
+
+📦 Size: 10.2 KB zipped · 19 KB program · no runtime, no dependencies
+
+Features
+
+Launch your programs, shortcuts, folders and files with a single click
+Add items by drag and drop, or right-click › Add a program…
+Rearrange icons: hold the click and drag
+Bottom or top of the screen
+“Start with Windows” option
+French interface by default, English available from the right-click menu
+A single file: it installs itself (Start menu, no admin rights, uninstall from Settings › Apps) or runs portable (settings stored in dock.ini, next to the exe)
+
+Ultra-light
+Written in native Rust, without the standard library. Unused memory is handed back to Windows after every redraw, and the dock uses no CPU while idle.
+
+Requirements: Windows 10 / 11, 64-bit.
+The exe is not signed, so Windows SmartScreen may show a warning on first launch: click “More info”, then “Run anyway”.
+
+MIT license, source code included.
